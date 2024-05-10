@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="信息聚合.png">
+<title>网络媒体の个性化信息聚合</title>
+<style> a {text-decoration: none; font-family: "Microsoft YaHei", sans-serif; font-weight: 500; color: black;}
+#searchInput1 {width: 156px;} #searchInput2 {width: 156px;} #searchInput3 {width: 156px;} </style>
+</head>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p style="font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: 600; color: rgb(0, 0, 0);">(01)小红书</p>
+<input type="text" id="searchInput1" placeholder="输入关键词 按Enter键搜索">
+<script>
+    const searchInput = document.getElementById('searchInput1');
+    searchInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const searchTerm = searchInput.value;
+            if (searchTerm.trim() !== '') {
+                const encodedSearchTerm = encodeURIComponent(searchTerm);
+                const searchUrl = `https://www.xiaohongshu.com/search_result?keyword=${encodedSearchTerm}`;
+                window.open(searchUrl, '_blank');
+                searchInput.value = '';
+            }
+        }
+    });
+</script>
+<p>
+  <a href="https://www.xiaohongshu.com/user/profile/5c12cd13000000000503d451" target="_blank">【Special】白鸭</a>&nbsp;&nbsp;
+  <a href="https://www.xiaohongshu.com/user/profile/6344d66a0000000018029749" target="_blank">【AI】码上就好</a>&nbsp;|
+  <a href="https://www.xiaohongshu.com/user/profile/63ba82bb0000000027028cab" target="_blank">李学长</a>&nbsp;|
+  <a href="https://www.xiaohongshu.com/user/profile/5cceadf4000000001702909e" target="_blank">机器人ROBOT</a>&nbsp;&nbsp;
+  <a href="https://www.xiaohongshu.com/user/profile/58b300825e87e7689457fbaf" target="_blank">【搞钱】平山冷燕</a>&nbsp;|
+  <a href="https://www.xiaohongshu.com/user/profile/61f7f34e00000000210230ef" target="_blank">珈弈加一</a>&nbsp;&nbsp;
+  <a href="https://www.xiaohongshu.com/user/profile/642521a0000000001102304b" target="_blank">【朋友】Jason</a>&nbsp;|
+  <a href="https://www.xiaohongshu.com/user/profile/5d282ecd0000000012016d6b" target="_blank">Arnett</a>
+</p>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p style="font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: 600; color: rgb(0, 0, 0);">(02)哔哩哔哩</p>
+<input type="text" id="searchInput2" placeholder="输入关键词 按Enter键搜索">&nbsp;|
+<a href="https://www.bilibili.com/v/popular/all/" target="_blank">B站热门</a>
+<script>
+  const searchInput2 = document.getElementById('searchInput2');
+  searchInput2.addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+          event.preventDefault();
+          const searchTerm2 = searchInput2.value;
+          if (searchTerm2.trim() !== '') {
+              const encodedSearchTerm2 = encodeURIComponent(searchTerm2);
+              const searchUrl2 = `https://search.bilibili.com/all?keyword=${encodedSearchTerm2}`;
+              window.open(searchUrl2, '_blank');
+              searchInput2.value = '';
+          }
+      }
+  });
+</script>
+<p>
+  <a href="https://space.bilibili.com/3461572668164598" target="_blank">【AI】AI评论员阿文</a>&nbsp;|
+  <a href="https://space.bilibili.com/3494380742642452" target="_blank">智元机器人</a>&nbsp;|
+  <a href="https://space.bilibili.com/1900783" target="_blank">同济子豪兄</a>&nbsp;|
+  <a href="https://space.bilibili.com/373596439" target="_blank">deep_thoughts</a>&nbsp;|
+  <a href="https://space.bilibili.com/18161609" target="_blank">霹雳吧啦Wz</a>&nbsp;|
+  <a href="https://space.bilibili.com/1567748478" target="_blank">跟李沐学AI</a>&nbsp;|
+  <a href="https://space.bilibili.com/437107843" target="_blank">浙江大学人工智能协会</a>&nbsp;|
+  <a href="https://space.bilibili.com/1293512903" target="_blank">OpenMMLab</a>&nbsp;|
+  <a href="https://space.bilibili.com/3461566190061988" target="_blank">火车上遇见</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/1958688020" target="_blank">【程序员】程序员平头哥在加拿大</a>&nbsp;|
+  <a href="https://space.bilibili.com/165659472" target="_blank">技术胖</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/1249671114" target="_blank">【English】Mr有意思</a>&nbsp;|
+  <a href="https://space.bilibili.com/218506533" target="_blank">Amy艾米饭</a>&nbsp;|
+  <a href="https://space.bilibili.com/401107571" target="_blank">学豆英语</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/504207128" target="_blank">【数学】梨米特考研数学</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/439069577" target="_blank">【医学】倪海厦中医讲堂</a>&nbsp;|
+  <a href="https://space.bilibili.com/1122854625" target="_blank">中医李盛青</a>&nbsp;|
+  <a href="https://space.bilibili.com/1142214871" target="_blank">程大夫谈育儿</a>&nbsp;|
+  <a href="https://space.bilibili.com/41179670" target="_blank">医学炸了</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/290526283" target="_blank">【美食】美食作家王刚R</a>&nbsp;|
+  <a href="https://space.bilibili.com/452767301" target="_blank">游厨冯马迁</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/23269062" target="_blank">【心理】态王</a>&nbsp;|
+  <a href="https://space.bilibili.com/2112598855" target="_blank">一念心性</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/626039175" target="_blank">【搞钱】然冉创业说</a>&nbsp;|
+  <a href="https://space.bilibili.com/543931674" target="_blank">马力在知群</a>&nbsp;|
+  <a href="https://space.bilibili.com/3546592019745210" target="_blank">艾坤编程</a>&nbsp;|
+  <a href="https://space.bilibili.com/3494362491127940" target="_blank">刘海峰商业</a>&nbsp;|
+  <a href="https://space.bilibili.com/3494373647976932" target="_blank">战略王刘海峰</a>&nbsp;|
+  <a href="https://space.bilibili.com/1201553531" target="_blank">路长全营销校长</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/25637408" target="_blank">【经验】全嘻嘻</a>&nbsp;|
+  <a href="https://space.bilibili.com/1218286288" target="_blank">内幕纠察局</a>&nbsp;|
+  <a href="https://space.bilibili.com/1158783249" target="_blank">心灵研究所</a>&nbsp;|
+  <a href="https://space.bilibili.com/471959769" target="_blank">无名测评</a>&nbsp;|
+  <a href="https://space.bilibili.com/119801456" target="_blank">老蒋巨靠谱</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/264996587" target="_blank">【汽车】小雄说车</a>&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/37090048" target="_blank">【官方】哔哩哔哩创作中心</a>&nbsp;&nbsp;
+</p>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p style="font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: 600; color: rgb(0, 0, 0);">(03)YouTube</p>
+<input type="text" id="searchInput3" placeholder="输入关键词 按Enter键搜索">&nbsp;|
+<a href="https://www.youtube.com/feed/trending" target="_blank">Trending</a>
+<script>
+  const searchInput3 = document.getElementById('searchInput3');
+  searchInput3.addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+          event.preventDefault();
+          const searchTerm3 = searchInput3.value;
+          if (searchTerm3.trim() !== '') {
+              const encodedSearchTerm3 = encodeURIComponent(searchTerm3);
+              const searchUrl3 = `https://www.youtube.com/results?search_query=${encodedSearchTerm3}`;
+              window.open(searchUrl3, '_blank');
+              searchInput3.value = '';
+          }
+      }
+  });
+</script>
+<p>
+  <a href="https://www.youtube.com/@bulianglin" target="_blank">【网络】不良林</a>&nbsp;|
+  <a href="https://www.youtube.com/@ygkkk" target="_blank">甬哥侃侃侃</a>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@lingdujieshuo" target="_blank">【科技】零度解说</a>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@RobotixwithSina" target="_blank">【机器人】Robotix with Sina</a>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@WILL_TheRichClub" target="_blank">【搞钱】富人俱樂部</a>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@zaharaEnglish" target="_blank">【英语】zaharaEnglish</a>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@dlwlrma" target="_blank">【Music】이지금 [IU Official]</a>&nbsp;|
+  <a href="https://www.youtube.com/@sinannannannan" target="_blank">司南</a>&nbsp;|
+  <a href="https://www.youtube.com/channel/UCkxTMlZkje8t_ZRC78V1A4w" target="_blank">Bi Chen Zhang - Topic</a>&nbsp;|
+  <a href="https://www.youtube.com/@gem0816" target="_blank">GEM鄧紫棋</a>&nbsp;|
+  <a href="https://www.youtube.com/@jaychou" target="_blank">周杰倫 Jay Chou</a>&nbsp;&nbsp;
+</p>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p style="font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: 600; color: rgb(0, 0, 0);">(04)Telegram</p>
+<p>
+  <a href="https://t.me/wewantyoutodothejob" target="_blank">【News】WeWantYou</a>&nbsp;|
+  <a href="https://t.me/zaihuatg" target="_blank">软件新闻频道·在花投稿</a>&nbsp;|
+  <a href="https://t.me/xhqcankao" target="_blank">风向旗参考快讯</a>&nbsp;|
+  <a href="https://t.me/opencfdchannel" target="_blank">开源社区</a>&nbsp;|
+  <a href="https://t.me/GodlyNews1" target="_blank">Yummy</a>&nbsp;|
+  <a href="https://t.me/DNSPODT" target="_blank">LoopDNS资讯播报</a>&nbsp;&nbsp;
+  <a href="https://t.me/FlyintNotice" target="_blank">【Airport】FlyintProNotice</a>&nbsp;|
+  <a href="https://t.me/InfiniPort" target="_blank">InfiniPort Notification Push</a>&nbsp;|
+  <a href="https://t.me/cat77org1" target="_blank">[猫七七]公告板</a>&nbsp;|
+  <a href="https://t.me/CFMIANFEI" target="_blank">CF免费机场</a>&nbsp;&nbsp;
+</p>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p style="font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: 600; color: rgb(0, 0, 0);">(05)Twitter</p>
+<p>
+  <a href="https://twitter.com/elonmusk" target="_blank">【大佬】Elon Musk</a>&nbsp;|
+  <a href="https://twitter.com/BillGates" target="_blank">Bill Gates</a>&nbsp;&nbsp;
+  <a href="https://twitter.com/OpenAI" target="_blank">【网站】OpenAI</a>&nbsp;|
+  <a href="https://twitter.com/AnthropicAI" target="_blank">Anthropic</a>&nbsp;|
+  <a href="https://twitter.com/Z_Lib_official" target="_blank">Z-Library Official</a>&nbsp;&nbsp;
+</p>
+<p>——————————————————————————</p>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<p><a href="https://github.com/immense-universe/WebMedia" target="_blank">GitHub: https://github.com/immense-universe/WebMedia</a></p>
+<!--所有链接在每次点击后都会变成紫色-->
+<script>
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    link.style.color = 'purple';
+  }); 
+});
+</script>
+</body>
+</html>
